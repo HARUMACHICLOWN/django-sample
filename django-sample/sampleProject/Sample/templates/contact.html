@@ -5,7 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Telegram: {{ contact.tg }} </h1>
-    <h1>Phone: {{ contact.phone }}  </h1>
+    {% for key, value in contact.items %}
+    <p>{{ key }}: {{ value }}</p>
+    {% endfor %}
 </body>
 </html>
